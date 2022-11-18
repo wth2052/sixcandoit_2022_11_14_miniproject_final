@@ -1,0 +1,591 @@
+            *{
+                margin: 0;
+            padding: 0;
+            }
+    *:lang(ko-kr){
+            font-family: 'Song Myung', serif;
+        }
+        *:lang(en){
+            font-family: 'Mochiy pop One', sans-serif;
+            color: #FCA205;
+            font-family: 'Lobster';
+        }
+        .mypic123456 {
+            width: 100%;
+            height: 400px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1601024445121-e5b82f020549?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
+            background-position: center;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .mypic123456 > h1 {
+            font-size: 75px;
+        }
+        .mypic123456 > h2 {
+            font-size: 50px;
+        }
+        .modal-h3title {
+            font-size: 20px;
+        }
+        .mybox {
+            width: 95%;
+            max-width: 700px;
+            padding: 20px;
+            border: 1px solid deepskyblue;
+            border-radius: 20px;
+            margin: 20px auto;
+        }
+        .mybucket {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mybucket > input {
+            width: 70%;
+        }
+        .mybox > li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            min-height: 48px;
+        }
+        .mybox > li > h2 {
+            max-width: 75%;
+            font-size: 30px;
+            font-weight: 500;
+            margin-right: auto;
+            margin-bottom: 0px;
+        }
+        .mybox > li > h2.done {
+            text-decoration:line-through
+        }
+        .text {
+            display: block;
+            justify-content: center;
+            font-size: 30px;
+
+        }
+        .sixcanlogodiv{
+            
+        }
+        .sixcanlogo{
+        width: 30%;
+        }
+        html, body, ul, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            background-color: #fff;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team-item {
+            flex-basis: 350px;
+            flex-shrink: 0;
+            margin: 0 4px;
+            opacity: 0.4;
+            transition: all .4s;
+        }
+
+        .team-item:hover {
+            opacity: 1;
+            flex-basis: 300px;
+            margin: 0 20px;
+        }
+
+        .team-item img {
+            width: 100%;
+        }
+
+        .profile {
+            background-color: #222;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile:before {
+            content: ' ';
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.95+100 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.95) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f2000000',GradientType=0 ); /* IE6-9 */
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 200px;
+        }
+
+        .profile_red {
+            color: #ff4949;
+        }
+
+        .profile_beige {
+            color: beige;
+        }
+
+        .profile_green {
+            color: darkseagreen;
+        }
+
+        .profile_pink {
+            color: pink;
+        }
+
+        .profile_purple {
+            color: violet;
+        }
+
+        .profile-contents {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 10px;
+        }
+
+        .profile-contents h2 {
+            font-size: 17px;
+        }
+
+        .profile-contents h2 span {
+            display: block;
+            font-size: 10px;
+        }
+
+        .profile-contents p {
+            color: white;
+            font-size: 10px;
+            min-width: 140px;
+            max-height: 0;
+            overflow: hidden;
+            line-height: 1.2;
+            transition: all 1s;
+            opacity: 0;
+        }
+
+        .team-item:hover .profile-contents p {
+            opacity: 1;
+            transition-delay: .4s;
+            max-height: 6em;
+            margin-top: 0.4em;
+        }
+            ul{
+
+        list-style:none;
+
+        }
+        .modal_button {
+            background-color:transparent;
+        }
+
+        .modal.in{
+        padding-right: 0 !important;
+        }
+        .modal-dialog {
+        width: 100%;
+        max-width:1000px;
+        height: 100%;
+        padding: 0;
+        margin:0 auto;
+        }
+        .modal-content {
+        height: 100%;
+        overflow:auto;
+        }
+        .modal-header{
+        margin-bottom:-60px;
+        position:relative;
+        z-index:10;
+        }
+        .modal-body {
+        padding-top:70px;
+        height: 100%;
+        }
+        .modal-body .in-content{
+        border-width:0;
+        width:100%;height:100%;
+        overflow:auto;
+        }
+
+
+        .mypic {
+            width:100%;
+            height: 100vh;
+
+            background-image: url('/static/img/background.PNG');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left top;
+            position: relative;
+        }
+
+        #mytitle {
+            position: absolute;
+            bottom: 40px;
+            right: 100px;
+            font-family: 'Nanum Brush Script', cursive;
+            font-size: 45px;
+        }
+
+        .mytitle2 {
+            background-color: black;
+            text-align: center;
+            padding: 100px 100px 50px 100px;
+            color: white;
+            font-family: 'Song Myung', serif;
+            font-size: 40px;
+        }
+
+        #byteam {
+            color: white;
+            font-size: 15px;
+            font-style: italic;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .teamintro {
+            margin: 50px auto 50px 50px;
+            text-align: center;
+            font-size: 35px;
+            font-family: 'Song Myung', serif;
+        }
+        .teampromise {
+            background: linear-gradient(#654ea3,#eaafc8);
+            padding: 50px;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Song Myung', serif;
+            color: white
+        }
+        .memberlist {
+            padding: 40px;
+            text-align: center;
+            font-family: 'Song Myung', serif;
+            font-size: 40px;
+        }
+        .mycards {
+            margin: 20px auto 0px auto;
+            width: 95%;
+            max-width: 1000px;
+        }
+        .mycards2 {
+            margin: 20px auto 0px auto;
+            width: 95%;
+            max-width: 700px;
+        }
+            .guestbookcards {
+            width: 95%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .guestbookcards > .card {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    .box1{
+        display: flex;
+    flex-direction: row;
+    justiy-content: center;
+    align-items: flex-start;
+    margin: 10px 50px;
+    }
+        .box2{
+        display: flex;
+    flex-direction: row;
+    justiy-content: center;
+    align-items: flex-start;
+    margin: 10px 50px;
+    }
+            advantage > li {
+            font-size: 25px;
+        }
+    .box3{
+        display: flex;
+    flex-direction: row;
+    justiy-content: center;
+    align-items: flex-start;
+    margin: 10px 50px;
+    }
+#staticBackdropLabel02 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+}
+
+.top02 {
+    display: flex;
+    height: 300px;
+    margin: 30px 0px 50px 0px;
+}
+.item {
+    width: 100%;
+    height: 300px;
+}
+
+.item:first-child > img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    --s: 10px; /* control the size */
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+.item:nth-child(2) > li{
+    line-height: 180%;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sub {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.card mb-3 {
+    margin: auto;
+}
+    /*   .box4{*/
+    /*    display: flex;*/
+    /*flex-direction: row;*/
+    /*justiy-content: center;*/
+    /*align-items: flex-start;*/
+    /*margin: 10px 50px;*/
+    /*}*/
+/*민주님 사진 css*/
+.item:first-child > img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    --s: 10px; /* control the size */
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+        .box1-4 {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 10px 50px;
+        }
+
+    #profile-picture {
+        width: 300px;
+        margin-right: 100px;
+        border-radius: 20px;
+    }
+    .introduction04 > h2 {
+        margin:0;
+        font-size: 35px;
+    }
+
+    .introduction04 > p {
+        font-weight: 1000;
+        font-size: 20px;
+
+        margin-top: 30px;
+    }
+
+        .box2-4 {
+            width: 800px;
+
+            margin: auto;
+        }
+            .advantage > h2 {
+        margin:0;
+        font-size: 35px;
+    }
+
+    .advantage > p {
+        font-weight: 1000;
+        font-size: 20px;
+
+        margin-top: 30px;
+    }
+
+    .collaboration > h2 {
+        margin:0;
+        font-size: 35px;
+    }
+        .collaboration  > p {
+        font-weight: 1000;
+        font-size: 20px;
+
+        margin-top: 30px;
+    }
+                .mypost{
+            margin: 20px auto 0px auto;
+            box-shadow: 0px 0px 3px 0px grey;
+            padding: 20px;
+            width: 500px;
+            max-width: 500px;
+            width: 95%;
+        }
+        .recordbuttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+
+            margin-top: 20px;
+        }
+        .recordbuttons > button {
+            margin-right: 10px;
+        }
+        .contents03 {
+    display: flex;
+    flex-direction: column;
+    /*text-align: center;*/
+    justify-content: center;
+    font-size : 25px;
+    margin-left : 30px;
+}
+
+        .strength03 {
+    padding : 20px;
+    margin : 10px auto 10px 20px;
+    width : 900px;
+}
+.strength03 > h3 {
+    border-top : 5px solid powderblue;
+    border-bottom : 5px solid powderblue;
+
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    font-weight: bold;
+}
+.strength03 > li {
+    font-size : 22px;
+}
+.mystyle03 {
+    padding : 20px;
+    margin : 10px auto 5px 20px;
+    width : 900px;
+}
+.mystyle03 > h3 {
+    border-top : 5px solid powderblue;
+    border-bottom : 5px solid powderblue;
+
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    font-weight: bold;
+}
+.mystyle03 > li {
+    font-size : 22px;
+}
+.last03 {
+    padding : 20px;
+    margin : 10px auto 30px 20px;
+    width : 900px;
+}
+.last03 > h3 {
+    border-top : 5px solid powderblue;
+    border-bottom : 5px solid powderblue;
+
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+    font-weight: bold;
+}
+.last03 > p {
+    font-size : 22px;
+}
+.letter03 {
+    width : 750px;
+    box-shadow: 0 0 3px 0 gray;
+
+    margin : auto auto 30px auto;
+    padding : 20px;
+
+    font-size : 19px;
+}
+.letter03 > button {
+
+    position: relative;
+    left : 630px;
+}
+.answer03 {
+    width : 750px;
+    margin : auto;
+
+}
+.answer03 > div {
+    box-shadow: 0 0 3px 0 black;
+    padding : 10px;
+    margin-bottom : 20px;
+    font-size : 20px;
+}
+.container {
+	display: flex;
+	/* display: inline-flex; */
+    flex-direction: row;
+}
+.mytitle > img{
+    width: 300px;
+    height: 200px;
+    margin-left :80px;
+    margin-top : 10px;
+}
+.myshow{
+    width: 485px;
+    height: 200px;
+    box-shadow: 0px 0px 3px 0px black;
+    margin-top :10px;
+    margin-left : 10px;
+}
+.mycards {
+    max-width: 800px;
+    width: 95%;
+    margin: 20px auto 20px auto;
+}
+.mycards > .card {
+    box-shadow: 0px 0px 3px 0px black;
+    margin-top :15px;
+}
+ .mypost {
+     width: 95%;
+     max-width: 800px;
+     margin: 20px auto 20px auto;
+     box-shadow: 0px 0px 3px 0px black;
+     padding: 20px;
+ }
+ .mypost > button {
+     margin-top: 10px;
+ }
