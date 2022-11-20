@@ -1,7 +1,7 @@
 # sixcandoit_2022_11_14_miniproject_final
 # 스파르타 내일배움캠프 팀(6 CAN DO IT!) 소개 미니 프로젝트 결과물
 * * * 
-* 👀 프로젝트 완성본 기술 시연https://wth2052.tistory.com/48
+* 👀 프로젝트 완성본 기술 시연 https://wth2052.tistory.com/48
 * 👀 최종 프로젝트 KPT 회고 https://wth2052.tistory.com/52
 * * *
 
