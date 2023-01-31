@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:lang(ko-kr) {
+    font-family: 'Song Myung', serif;
+}
+
+*:lang(en) {
+    font-family: 'Mochiy pop One', sans-serif;
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+
+.mypic123456 {
+    width: 100%;
+    height: 200px;
+    background-image: url('/static/img/logo.jpg');
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timenow {
+    text-align: center;
+}
+
+.modal-h3title {
+    font-size: 20px;
+}
+
+.mybox {
+    width: 95%;
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid deepskyblue;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.mybucket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mybucket > input {
+    width: 70%;
+}
+
+.mybox > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    min-height: 48px;
+}
+
+.mybox > li > h2 {
+    max-width: 75%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.mybox > li > h2.done {
+    text-decoration: line-through
+}
+
+.text {
+    display: block;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+
+.sixcanlogo {
+    width: 30%;
+}
+
+html, body, ul, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-item {
+    flex-basis: 350px;
+    flex-shrink: 0;
+    margin: 0 4px;
+    opacity: 0.4;
+    transition: all .4s;
+}
+
+.team-item:hover {
+    opacity: 1;
+    flex-basis: 300px;
+    margin: 0 20px;
+}
+
+.team-item img {
+    width: 100%;
+}
+
+.profile {
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile:before {
+    content: ' ';
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.95+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#f2000000', GradientType=0); /* IE6-9 */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+}
+
+.profile_red {
+    color: #ff4949;
+}
+
+.profile_beige {
+    color: beige;
+}
+
+.profile_green {
+    color: darkseagreen;
+}
+
+.profile_pink {
+    color: pink;
+}
+
+.profile_purple {
+    color: violet;
+}
+
+.profile-contents {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.profile-contents h2 {
+    font-size: 17px;
+}
+
+.profile-contents h2 span {
+    display: block;
+    font-size: 10px;
+}
+
+.profile-contents p {
+    color: white;
+    font-size: 10px;
+    min-width: 140px;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.2;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.team-item:hover .profile-contents p {
+    opacity: 1;
+    transition-delay: .4s;
+    max-height: 6em;
+    margin-top: 0.4em;
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+/*개인 프로필 시작*/
+.modal.in {
+    padding-right: 0 !important;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.modal-content {
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-header {
+    margin-bottom: -60px;
+    position: relative;
+    z-index: 10;
+}
+
+.modal-body {
+    padding-top: 70px;
+    height: 100%;
+    margin: auto;
+}
+
+.modal-body .in-content {
+    border-width: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.top02 {
+    display: flex;
+    height: 300px;
+    margin: 30px 0px 50px 0px;
+}
+
+.item {
+    width: 100%;
+    height: 300px;
+}
+
+.item:first-child > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    --s: 10px; /* control the size */
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 1px solid #000;
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+.item:nth-child(2) > li {
+    line-height: 180%;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sub{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+h5.card-title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+}
+
+p.card-text, .list-group-item{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+blockquote .blockquote mb-0  {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.card mb-3 {
+    margin: auto;
+}
+
+
+.mypost {
+    width: 95%;
+    max-width: 700px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.mypost > button{
+    margin-top : 10px;
+}
+
+
+
+/*메인 사이트*/
+.mypic {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('/static/img/background.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: relative;
+}
+
+#mytitle {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 45px;
+}
+
+.mytitle2 {
+    background-color: black;
+    text-align: center;
+    padding: 100px 100px 50px 100px;
+    color: white;
+    font-family: 'Song Myung', serif;
+    font-size: 40px;
+}
+
+#byteam {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.teamintro {
+    margin: 100px auto 50px 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Song Myung', serif;
+}
+
+.teampromise {
+    background: linear-gradient(#654ea3, #eaafc8);
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Song Myung', serif;
+    color: white
+}
+
+#promiselist {
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.memberlist {
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Song Myung', serif;
+    font-size: 40px;
+}
+
+.mycards {
+    margin: 20px auto 0px auto;
+    width: 95%;
+    max-width: 1000px;
+}
+
+.mycards2 {
+    margin: 20px auto 0px auto;
+    width: 95%;
+    max-width: 700px;
+}
+
+.guestbookcards {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.guestbookcards > .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+body{
+    background-color: #ffffff; /* 원하는 배경색 */
+}
+.date{
+    font-size: 15px;  /* 원하는 폰트 사이즈 */
+    color: black;/* 날짜가 표기되는 텍스트 색상 */
+}
+.time{
+    font-size:  20px;/* 원하는 폰트 사이즈 */
+    font-weight: bold;
+    color:  black;/* 시간이 표기되는 텍스트 색상 */
+}
+
