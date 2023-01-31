@@ -11,7 +11,7 @@ from pymongo import MongoClient
 # 방법2 - HOST, PORT
 
 #Cluster에 연결하기
-client = pymongo.MongoClient("mongodb+srv://root:3d720307@cluster0.w2bgbed.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://root:pwd@cluster0.w2bgbed.mongodb.net/?retryWrites=true&w=majority")
 db = client.sixcandoit
 
 # objectid = str스트링으로 변환해주는 코드들 시작
